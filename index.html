@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Внутриколледжный чемпионат ВСК</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+              <img src="./images/kit.svg" alt="">
+                <div class="college-name" data-translate="collegeName">Колледж информационных технологий</div>
+            </div>
+            
+            <nav class="nav-buttons">
+                <a href="index.html" class="nav-btn active" data-translate="navRegistration">Регистрация</a>
+                <a href="pages/stages.html" class="nav-btn" data-translate="navStages">Этапы</a>
+                <a href="pages/winners.html" class="nav-btn" data-translate="navWinners">Итоги</a>
+            </nav>
+            
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="ru">RU</button>
+                <button class="lang-btn" data-lang="kz">ҚАЗ</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Background Slider -->
+    <div class="background-slider">
+        <img src="./images/babuin1.jpeg" class="slider-image active" alt="Background 1">
+        <img src="./images/babuin2.jpeg" class="slider-image" alt="Background 2">
+        <img src="./images/babuin3.jpeg" class="slider-image" alt="Background 3">
+        <div class="slider-overlay"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="hero-section">
+            <!-- Moved title and subtitle to top center, separate from form -->
+            <div class="hero-header">
+                <h1 class="hero-title" data-translate="heroTitle">«Внутриколледжный чемпионат ВСК»</h1>
+                <p class="hero-subtitle" data-translate="heroSubtitle">«Покажи свои знания и умения!»</p>
+            </div>
+
+            <div class="hero-bottom">
+                <div class="hero-content">
+                </div>
+
+                <!-- Registration Form -->
+                <div class="registration-form">
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label class="form-label" data-translate="labelFullName">Фамилия, имя, отчество</label>
+                            <input type="text" class="form-input" id="fullName" required>
+                            <span class="error-message" id="fullNameError" data-translate="errorRequired">Это поле обязательно</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" data-translate="labelGroup">Группа</label>
+                            <input type="text" class="form-input" id="group" required>
+                            <span class="error-message" id="groupError" data-translate="errorRequired">Это поле обязательно</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" data-translate="labelSpecialty">Специальность</label>
+                            <select class="form-select" id="specialty" required>
+                                <option value="" data-translate="selectSpecialty">Выберите специальность</option>
+                                <option value="programming" data-translate="specialtyProgramming">Программирование</option>
+                                <option value="webdev" data-translate="specialtyWebDev">Веб-разработка</option>
+                                <option value="design" data-translate="specialtyDesign">Дизайн</option>
+                                <option value="networks" data-translate="specialtyNetworks">Сетевые технологии</option>
+                                <option value="databases" data-translate="specialtyDatabases">Базы данных</option>
+                            </select>
+                            <span class="error-message" id="specialtyError" data-translate="errorRequired">Это поле обязательно</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" data-translate="labelPhone">Контактный телефон (WhatsApp)</label>
+                            <input type="tel" class="form-input" id="phone" placeholder="+7 (___) ___-__-__" required>
+                            <span class="error-message" id="phoneError" data-translate="errorPhone">Введите корректный номер телефона</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" data-translate="labelCompetency">Компетенция</label>
+                            <select class="form-select" id="competency" required>
+                                <option value="" data-translate="selectCompetency">Выберите компетенцию</option>
+                                <option value="webdev" data-translate="competencyWebDev">Веб-разработка</option>
+                                <option value="programming" data-translate="competencyProgramming">Программирование</option>
+                                <option value="design" data-translate="competencyDesign">Дизайн</option>
+                                <option value="networks" data-translate="competencyNetworks">Сетевые технологии</option>
+                            </select>
+                            <span class="error-message" id="competencyError" data-translate="errorRequired">Это поле обязательно</span>
+                        </div>
+
+                        <button type="submit" class="submit-btn" data-translate="btnSubmit">Отправить заявку</button>
+                        
+                        <div class="success-message" id="successMessage" data-translate="successMessage">
+                            Ваша заявка принята! Спасибо за участие.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Ticker -->
+    <div class="ticker">
+        <div class="ticker-content">
+            <span class="ticker-item" data-translate="ticker1">Регистрация до 15 февраля</span>
+            <span class="ticker-item" data-translate="ticker2">Конкурс 20–24 февраля</span>
+            <span class="ticker-item" data-translate="ticker3">Итоги 25 февраля</span>
+            <span class="ticker-item" data-translate="ticker4">Победителей ждут призы!</span>
+            <span class="ticker-item" data-translate="ticker1">Регистрация до 15 февраля</span>
+            <span class="ticker-item" data-translate="ticker2">Конкурс 20–24 февраля</span>
+            <span class="ticker-item" data-translate="ticker3">Итоги 25 февраля</span>
+            <span class="ticker-item" data-translate="ticker4">Победителей ждут призы!</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-translate="copyright">© Колледж информационных технологий, 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
